@@ -1,0 +1,195 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+header{
+    justify-content: center;
+    display: flex;
+    height: 123px;
+}
+.container{
+    width: 989px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .pesquisa{
+    width: 250px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.container .pesquisa #txtBusca{
+    width: 250px;
+    height: 30px;
+    display: flex;
+    border: 1px solid #c4c4c4;
+    font-size: 11px;
+    font-family: arial;
+    padding-left: 10px;
+    color: #c4c4c4;
+
+}
+
+.container .pesquisa img{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    border: 1px solid #c4c4c4;
+    background-color: #c4c4c4;
+}
+
+section{
+    margin-top: 23px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px ;
+}
+section .contflex{
+    justify-content: space-between;
+}
+section .contMenu{
+    display: flex;
+    justify-content: center;
+}
+section .contMenu li{
+    display: flex;
+    flex-direction: row;
+    margin-right: 35px;
+}
+section .contMenu li a{
+    width: 307px;
+    height: 40px;
+    justify-content: center;
+    background-color: #3d5057;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+section .contMenu li a:hover{
+    background-color: #667a82;
+}
+section .banner img{
+    width: 100%;
+}
+section .pgs{
+    display: flex;
+    
+}
+
+section .pgs .pagina1, .pagina2{
+    text-align: justify;
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #354348;
+    margin-bottom: 25px;
+}
+section .pgs .pagina1 {
+    margin-right: 25px;
+    
+}
+section .pgs .pagina1 h1,h1{
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #354348;
+}
+
+
+section .pgs .pagina1 .imagem{
+    
+    float: right;
+    padding:5px ;
+}
+section .pgs .pagina2 .imagem2{
+    
+    float: left;
+    padding:5px ;
+}
+section .pgs .pagina2 h1{
+    
+ text-align: center;
+}
+footer{
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    background-color: #dddddd;
+
+}
+ footer .rodape{
+     width: 989px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ footer .rodape p{
+     font-size: 9PX;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #6A656565;
+ }
+
+ @media (max-width: 768px){
+    .container {
+        width: 716px;
+    }
+    section .contMenu li a {
+        width: 215px;
+    }
+    .container .pesquisa {
+        width: 216px;
+    }
+    .container .pesquisa #txtBusca {
+            width: 171px
+ 
+    }
+    footer .rodape {
+        width: 716px;
+    }
+    footer {
+        width: 716px;
+        margin:auto;
+    }
+ 
+}
+@media (max-width: 425px){
+    .container {
+        width: 425px;
+    }
+    .container .pesquisa{
+        display: none;
+    }
+    .container img{
+        flex: 1;
+        padding: 2px;
+    }
+    section .contMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    section .contMenu li a{
+        display: flex;
+        flex:1;
+        width: 425px;
+    }
+    section .pgs {
+        display: flex;
+        flex-direction: column;
+    }
+    section .pgs .pagina1 {
+        margin-right: 0;
+    }
+    footer {
+        width: 425px;
+        margin: auto;
+    }
+    footer .rodape {
+        width: 425px;
+    }
+}
